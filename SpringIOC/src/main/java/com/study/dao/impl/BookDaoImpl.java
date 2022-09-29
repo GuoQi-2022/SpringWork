@@ -13,6 +13,10 @@ public class BookDaoImpl implements BookDao {
     private String dateBaseName;
     private Properties properties;
     private int connectionName;
+    public BookDaoImpl(String dateBaseName, int connectionName) {
+        this.dateBaseName = dateBaseName;
+        this.connectionName = connectionName;
+    }
 
     public BookDaoImpl(String dateBaseName, Properties properties, int connectionName) {
         this.dateBaseName = dateBaseName;
@@ -22,6 +26,7 @@ public class BookDaoImpl implements BookDao {
 
     public BookDaoImpl() {
     }
+
     public BookDaoImpl(int connectionName) {
         this.connectionName = connectionName;
     }

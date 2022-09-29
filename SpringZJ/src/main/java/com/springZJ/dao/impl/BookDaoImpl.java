@@ -1,8 +1,9 @@
-package com.study.dao.impl;
+package com.springZJ.dao.impl;
 
 import java.util.Properties;
 
-import com.study.dao.BookDao;
+import com.springZJ.dao.BookDao;
+
 
 /**
  * @author wb.guoqi

@@ -1,4 +1,4 @@
-package com.study.service;
+package com.springZJ.service;
 
 /**
  * @author wb.guoqi

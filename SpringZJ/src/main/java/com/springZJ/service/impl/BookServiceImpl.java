@@ -1,7 +1,8 @@
-package com.study.service.impl;
+package com.springZJ.service.impl;
 
-import com.study.dao.BookDao;
-import com.study.service.BookService;
+
+import com.springZJ.dao.BookDao;
+import com.springZJ.service.BookService;
 
 /**
  * @author wb.guoqi

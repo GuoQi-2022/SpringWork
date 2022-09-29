@@ -1,4 +1,4 @@
-package com.study.dao;
+package com.springZJ.dao;
 
 /**
  * @author wb.guoqi
