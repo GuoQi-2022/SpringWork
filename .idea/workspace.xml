@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="03f135a6-8a45-412e-8724-1044e9d0014a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/SpringWork/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWork/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWork/src/main/java/com/study/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWork/src/main/java/com/study/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWork/src/main/java/com/study/dao/impl/BookDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWork/src/main/java/com/study/dao/impl/BookDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWork/src/main/java/com/study/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWork/src/main/java/com/study/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWork/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWork/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWork/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWork/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWork/target/classes/com/study/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWork/target/classes/com/study/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWork/target/classes/com/study/dao/impl/BookDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWork/target/classes/com/study/dao/impl/BookDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringWork/target/classes/com/study/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/SpringWork/target/classes/com/study/service/impl/BookServiceImpl.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="a158aed6-30f3-48f1-b382-e3682468abb9" />
+  </component>
+  <component name="ProjectId" id="2FNcBb0bfNnsKZO6KEpH6jz8X1f" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/study" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SpringWork/src/main/resources" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\StudayWorkspaces\SpringWork\SpringWork\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.study.factory" />
+      <recent name="com.study.dao.impl" />
+      <recent name="com.study.dao" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.App" />
+      <module name="SpringWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.Application" />
+      <module name="SpringWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.study.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03f135a6-8a45-412e-8724-1044e9d0014a" name="Default Changelist" comment="" />
+      <created>1664335849469</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664335849469</updated>
+      <workItem from="1664335851199" duration="7437000" />
+      <workItem from="1664416207332" duration="10615000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

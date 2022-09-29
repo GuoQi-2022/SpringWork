@@ -19,6 +19,10 @@ public class BookServiceImpl implements BookService {
         this.userDao = userDao;
     }
 
+    public BookServiceImpl(UserDao userDao) {
+        this.userDao = userDao;
+    }
+
     public BookServiceImpl(BookDao bookDao) {
         this.bookDao = bookDao;
     }

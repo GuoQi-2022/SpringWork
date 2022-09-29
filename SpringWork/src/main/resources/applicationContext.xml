@@ -14,16 +14,30 @@
         <property name="userDao" ref="userDao"/>
     </bean>
 -->
-    <!--配置Bean-->
+<!--    &lt;!&ndash;配置Bean&ndash;&gt;
     <bean id="bookDao" class="com.study.dao.impl.BookDaoImpl">
         <constructor-arg type="java.lang.String" value="MySql"/>
         <constructor-arg type="int" value="10"/>
     </bean>
-    <!--构造方法-->
+    &lt;!&ndash;构造方法&ndash;&gt;
     <bean id="bookService" class="com.study.service.impl.BookServiceImpl">
         <constructor-arg name="bookDao" ref="bookDao"/>
         <constructor-arg name="userDao" ref="userDao"/>
+    </bean>-->
+
+        <!--配置Bean-->
+    <bean id="bookDao" class="com.study.dao.impl.BookDaoImpl">
+        <constructor-arg type="java.lang.String" value="MySql"/>
+        <constructor-arg type="int" value="10"/>
+        <property name="properties">
+            <props>
+                <prop key="aaa">bbb</prop>
+            </props>
+        </property>
     </bean>
+    <!--构造方法-->
+    <bean id="bookService" class="com.study.service.impl.BookServiceImpl" autowire="byType"/>
+
     <!--静态工厂创建对象-->
     <bean id="orderDaoFactory" class="com.study.factory.OrderDaoFactory" factory-method="getOrderDao"/>
 
@@ -31,5 +45,5 @@
     <bean id="userDaoFactory" class="com.study.factory.UserDaoFactory"/>
     <bean id="userDao" factory-method="getUserDao" factory-bean="userDaoFactory"/>
     <!--使用FactoryBean创建-->
-    <bean id="userDaoBean" class="com.study.factory.UserDaoFactoryBean"/>
+<!--    <bean id="userDaoBean" class="com.study.factory.UserDaoFactoryBean"/>-->
 </beans>
