@@ -22,7 +22,6 @@ public class BookDaoImpl implements BookDao {
 
     public BookDaoImpl() {
     }
-
     public BookDaoImpl(int connectionName) {
         this.connectionName = connectionName;
     }

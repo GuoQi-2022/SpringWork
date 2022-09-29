@@ -27,14 +27,10 @@
         </bean>-->
     <bean id="comboPooledDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="${jdbc.Driver}"/>
-        <property name="jdbcUrl" value="${jdbc.Driver}"/>
+        <property name="jdbcUrl" value="${jdbc.url}"/>
         <property name="user" value="${jdbc.Driver}"/>
         <property name="password" value="${jdbc.password}"/>
         <property name="maxPoolSize" value="${jdbc.maxPoolSize}"/>
     </bean>
     
-    <bean id="bookDao2" class="com.study.dao.impl.BookDaoImpl">
-        <property name="dateBaseName" value="${username}"/>
-        <property name="connectionName" value="${jdbc.maxPoolSize}"/>
-    </bean>
 </beans>
