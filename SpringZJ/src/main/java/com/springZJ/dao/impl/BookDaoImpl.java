@@ -2,6 +2,12 @@ package com.springZJ.dao.impl;
 
 import java.util.Properties;
 
+import javax.annotation.Resource;
+
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
+
 import com.springZJ.dao.BookDao;
 
 
@@ -9,6 +15,7 @@ import com.springZJ.dao.BookDao;
  * @author wb.guoqi
  * @create 2022/9/28 11:34
  */
+@Repository
 public class BookDaoImpl implements BookDao {
 
     private String dateBaseName;

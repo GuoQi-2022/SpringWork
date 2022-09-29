@@ -8,5 +8,5 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd
         ">
-    <bean class="com.springZJ.dao.impl.BookDaoImpl" id="bookDao"/>
+    <context:component-scan base-package="com.springZJ"/>
 </beans>
