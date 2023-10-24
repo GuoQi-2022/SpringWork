@@ -2,12 +2,9 @@ package com.springZJ.dao.impl;
 
 import java.util.Properties;
 
-import javax.annotation.Resource;
-
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
+import com.alibaba.fastjson.JSON;
 import com.springZJ.dao.BookDao;
 
 
@@ -67,8 +64,8 @@ public class BookDaoImpl implements BookDao {
 
     @Override
     public void save() {
-//        properties.setProperty("key", "value");
+        properties.setProperty("key", "value");
         System.out.println("book dao save ......" + dateBaseName + "," + connectionName);
-//        System.out.println(JSON.toJSONString(properties));
+        System.out.println(JSON.toJSONString(properties));
     }
 }

@@ -2,6 +2,7 @@ package com.study.dao.impl;
 
 import java.util.Properties;
 
+import com.alibaba.fastjson.JSON;
 import com.study.dao.BookDao;
 
 /**
@@ -63,8 +64,8 @@ public class BookDaoImpl implements BookDao {
 
     @Override
     public void save() {
-//        properties.setProperty("key", "value");
+        properties.setProperty("key", "value");
         System.out.println("book dao save ......" + dateBaseName + "," + connectionName);
-//        System.out.println(JSON.toJSONString(properties));
+        System.out.println(JSON.toJSONString(properties));
     }
 }
