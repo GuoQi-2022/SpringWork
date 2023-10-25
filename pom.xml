@@ -29,6 +29,9 @@
         <spring-cloud.version>2020.0.4</spring-cloud.version>
         <MybatisPlus.version>3.4.1</MybatisPlus.version>
         <MybatisPlus.core.version>3.5.3</MybatisPlus.core.version>
+        <velocity.version>1.7</velocity.version>
+        <collections4.version>4.1</collections4.version>
+        <easypoi.version>3.0.3</easypoi.version>
         <spring.boot.version>2.0.5.RELEASE</spring.boot.version>
     </properties>
     <dependencyManagement>
@@ -85,6 +88,32 @@
             </dependency>
 
             <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity</artifactId>
+                <version>${velocity.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${collections4.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.afterturn</groupId>
+                <artifactId>easypoi-base</artifactId>
+                <version>${easypoi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.afterturn</groupId>
+                <artifactId>easypoi-web</artifactId>
+                <version>${easypoi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.afterturn</groupId>
+                <artifactId>easypoi-annotation</artifactId>
+                <version>${easypoi.version}</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring.boot.version}</version>
@@ -98,6 +127,7 @@
                 <version>4.12</version>
                 <scope>test</scope>
             </dependency>
+
 
             <dependency>
                 <groupId>org.springframework.cloud</groupId>

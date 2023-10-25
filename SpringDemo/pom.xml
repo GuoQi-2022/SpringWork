@@ -59,9 +59,23 @@
 		<dependency>
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity</artifactId>
-			<version>1.7</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>cn.afterturn</groupId>
+			<artifactId>easypoi-base</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>cn.afterturn</groupId>
+			<artifactId>easypoi-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>cn.afterturn</groupId>
+			<artifactId>easypoi-annotation</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>com.alibaba</groupId>
@@ -108,6 +122,13 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.mchange</groupId>
+			<artifactId>mchange-commons-java</artifactId>
+			<version>0.2.19</version>
+			<scope>compile</scope>
+		</dependency>
+
 
 	</dependencies>
 

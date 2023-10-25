@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Map;
 
 import com.alibaba.fastjson.JSON;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
@@ -109,24 +108,4 @@ public class OrderDto {
      */
     private Boolean newArchitecture;
 
-    @JsonIgnore
-    public String getH5PayUrl() {
-        Map<String, String> urlMap = JSON.parseObject(this.payUrl, Map.class);
-        if (null != urlMap) {
-            return urlMap.get("h5");
-        } else {
-            return "";
-        }
-    }
-
-    @JsonIgnore
-    public String getAppPayUrl() {
-        log.info("this.payUrl={}", this.payUrl);
-        Map<String, String> urlMap = JSON.parseObject(this.payUrl, Map.class);
-        if (null != urlMap) {
-            return urlMap.get("app");
-        } else {
-            return "";
-        }
-    }
 }

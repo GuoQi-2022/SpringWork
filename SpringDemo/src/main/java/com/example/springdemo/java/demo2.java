@@ -1,24 +1,15 @@
 package com.example.springdemo.java;
 
-import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.text.SimpleDateFormat;
 import java.util.Base64;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Stack;
 
 import lombok.extern.slf4j.Slf4j;
 import sun.misc.BASE64Decoder;
-
-import org.apache.commons.lang.time.DateUtils;
-import org.springframework.web.multipart.MultipartFile;
 
 /**
  * @author wb.guoqi
@@ -58,7 +49,7 @@ public class demo2 {
         InputStream in;
         byte[] data = null;
         try {
-//            in = fileFromBase64.getInputStream();
+            //            in = fileFromBase64.getInputStream();
             in = new FileInputStream(fileFromBase64);
             data = new byte[in.available()];
             in.read(data);
@@ -71,6 +62,7 @@ public class demo2 {
         generateImage(imgStr, "C:\\Users\\Tmind\\Pictures\\" + fileFromBase64.getName());
         return genDownloadUrl(fileFromBase64.getName());
     }
+
     public static boolean generateImage(String imgStr, String imgFilePath) {// 对字节数组字符串进行Base64解码并生成图片
         /* 图像数据为空 */
         if (imgStr == null) {
@@ -103,20 +95,19 @@ public class demo2 {
         File file = null;
         OutputStream out = null;
         /* 图像数据为空 */
-        if (base64Pic == null) {
-        } else {
+        if (base64Pic == null) {} else {
             BASE64Decoder decoder = new BASE64Decoder();
             /* 前台在用Ajax传base64值的时候会把base64中的+换成空格，所以需要替换回来。 */
             String baseValue = base64Pic.replaceAll(" ", "+");
             /* 去除base64中无用的部分 */
             byte[] b = decoder.decodeBuffer(baseValue.replace("data:image/jpeg;base64,", ""));
-//            String imgFilePath = ""  + System.currentTimeMillis() + ".jpg";
+            //            String imgFilePath = ""  + System.currentTimeMillis() + ".jpg";
             String imgFilePath = "jiaoHangImg";
-            /*File file1 = new File(imgFilePath);
-            *//* 判断文件路径下的文件夹是否存在，不存在则创建 *//*
-            if (!file1.exists() && !file1.isDirectory()) {
-                file1.mkdirs();
-            }*/
+            /*
+             * File file1 = new File(imgFilePath);
+             *//* 判断文件路径下的文件夹是否存在，不存在则创建 *//*
+                                            * if (!file1.exists() && !file1.isDirectory()) { file1.mkdirs(); }
+                                            */
             try {
                 for (int i = 0; i < b.length; ++i) {
                     /* 调整异常数据 */
@@ -125,24 +116,24 @@ public class demo2 {
                     }
                 }
                 file = new File(imgFilePath + "\\" + "yxUserId" + System.currentTimeMillis() + ".jpg");
-//                file = new File("yxUserId" + System.currentTimeMillis() + ".jpg");
+                //                file = new File("yxUserId" + System.currentTimeMillis() + ".jpg");
                 // 如果要返回file文件这边return就可以了,存到临时文件中
                 out = new FileOutputStream(file.getPath());
                 out.write(b);
                 out.flush();
                 out.close();
                 return generateImage(file);
-            } catch (Exception e) {
-            } finally {
+            } catch (Exception e) {} finally {
                 if (null != out) {
                     out.close();
                 }
                 file.delete();
-//                file1.delete();
+                //                file1.delete();
             }
         }
         return null;
     }
+
     private static String genDownloadUrl(String key) {
         return "http://" + "yanxuan" + ".nosdn.127.net/" + key;
     }

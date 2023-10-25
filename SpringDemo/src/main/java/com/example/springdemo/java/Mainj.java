@@ -2,9 +2,8 @@ package com.example.springdemo.java;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import java.util.stream.Collectors;
-import org.apache.commons.collections4.CollectionUtils;
+
 import org.apache.commons.collections4.ListUtils;
 
 import com.alibaba.fastjson.JSON;
